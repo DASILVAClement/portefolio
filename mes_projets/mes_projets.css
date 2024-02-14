@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/travaux.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+
+.nom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 50px;
+    color: white;
+}
+
+
+/*Tout le nécessaire pour le menu principal*/
+.menu {
+    display: flex;
+    padding:0;
+    justify-content: space-around;  /* Alignements des liens dans le menu */
+    font-family: serif;
+}
+
+.menu li {
+    list-style-type: none ;         /* Supprime les puces */
+}
+
+.menu a {
+    display:block;
+    min-width: 180px;               /* Largeur des liens*/
+    padding: 7px ;
+    text-align: center;
+    color: black;
+    text-decoration: none;          /* Supprime le soulignement des liens*/
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all 0.5s ;
+}
+
+.menu a:hover,
+.menu a:hover.actif{
+    background-color: black;
+    color: white;
+}
+/*Fin des élément du menu*/
+
+
+header {
+    background-color: white;
+    color: white;
+    text-align: center;
+    padding: 3px;
+}
+
+
+.pied_page{
+    background: black;
+    color: white;
+    font-size: 15px;
+    margin-bottom: -100px;
+    height: 100px;
+}

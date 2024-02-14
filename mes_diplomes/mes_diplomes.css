@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Tout le nécessaire pour le menu principal*/
+.menu {
+    display: flex;
+    padding:0;
+    justify-content: space-around;  /* Alignements des liens dans le menu */
+    font-family: serif;
+}
+
+.menu li {
+    list-style-type: none ;         /* Supprime les puces */
+}
+
+.menu a {
+    display:block;
+    min-width: 180px;               /* Largeur des liens*/
+    padding: 7px ;
+    text-align: center;
+    color: black;
+    text-decoration: none;          /* Supprime le soulignement des liens*/
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all 0.5s ;
+}
+
+.menu a:hover,
+.menu a:hover.actif{
+    background-color: black;
+    color: white;
+}
+/*Fin des élément du menu*/
+
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+/*Tout les élément du menu pour les images des diplômes*/
+.menu_diplome {
+    display: flex;
+    padding:0;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.menu_diplome li {
+    list-style-type: none ;          /* Supprime les puces */
+}
+
+.menu_diplome a {
+    margin: 100px;
+}
+/*Fin des élément du menu pour les diplôme*/
+
+
+.pied_page{
+    background: black;
+    color: white;
+    font-size: 15px;
+    height: 100px;
+}

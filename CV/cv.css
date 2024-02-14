@@ -1,0 +1,91 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/*Tout le nécessaire pour le menu principal*/
+.menu {
+    display: flex;
+    padding:0;
+    justify-content: space-around;  /* Alignements des liens dans le menu */
+    font-family: serif;
+}
+
+.menu li {
+    list-style-type: none ;         /* Supprime les puces */
+}
+
+.menu a {
+    display:block;
+    min-width: 180px;               /* Largeur des liens*/
+    padding: 7px ;
+    text-align: center;
+    color: black;
+    text-decoration: none;          /* Supprime le soulignement des liens*/
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all 0.5s ;
+}
+
+.menu a:hover,
+.menu a:hover.actif{
+    background-color: black;
+    color: white;
+}
+/*Fin des élément du menu*/
+
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.loisirs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-frame {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.pied_page{
+    font-family: serif;
+    background: black;
+    color: white;
+    font-size: 15px;
+    margin-bottom: -100px;
+    height: 100px;
+}
